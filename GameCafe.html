@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Fortnite</h1>
+        <p>Welcome to the ultimate gaming experience!</p>
+        <nav>
+            <a href="#games">Games</a>
+            <a href="#about">About Us</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+            <a href="#events">Events</a>
+        </nav>
+    </header>
+
+        <div id="gameNameDisplay">   </div>
+
+        <div class="games-gallery">
+            <img src="960x0.webp" alt="Call of Duty" onmouseover="showGameName('Call of Duty')" onmouseout="hideGameName()">
+            <img src="61j+Dpn1dgL.jpg" alt="Assassin's Creed" onmouseover="showGameName('Assassin\'s Creed')" onmouseout="hideGameName()">
+            <img src="EGS_HorizonForbiddenWestCompleteEdition_GuerrillaGamesNixxesSoftware_S2_1200x1600-6eeadae1c58ebaaa74b109bd26d96645.jpeg" alt="Horizon" onmouseover="showGameName('Horizon')" onmouseout="hideGameName()">
+            <img src="uncharted-4-a-thiefs-end-7644cfec.webp" alt="Uncharted" onmouseover="showGameName('Uncharted')" onmouseout="hideGameName()">
+            <img src="MV5BODkzMDM2ZTctYmFkZS00OTEyLWI1ZDgtNzMwMDBkMGVmY2RhXkEyXkFqcGc@._V1_.jpg" alt="Far Cry" onmouseover="showGameName('Far Cry')" onmouseout="hideGameName()">
+        </div>
+    </section>
+
+    <script>
+        function showGameName(gameName) {
+            document.getElementById("gameNameDisplay").innerText = gameName;
+        }
+
+        function hideGameName() {
+            document.getElementById("gameNameDisplay").innerText;
+        }
+    </script>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <table>
+            <tr>
+                <th>Duration</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>1 Hour</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>2 Hours</td>
+                <td>$18</td>
+            </tr>
+            <tr>
+                <td>3 Hours</td>
+                <td>$25</td>
+            </tr>
+            <tr>
+                <td>All Day</td>
+                <td>$50</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="trailer-section">
+        <h2>Watch Trailer</h2>
+        <div class="video-container">
+            <video width="100%" controls>
+                <source src="5rctf.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="description-section">
+        <h2>About the Game</h2>
+        <p>This game brings you into an immersive world where you experience the thrill of,
+           <ul>
+            <li>Action</li>
+            <li>Adventure</li>
+            <li>and Strategy.</li>
+           </ul>It's designed to challenge your skills and keep you engaged for hours with stunning graphics, engaging storylines, and dynamic gameplay.</p>
+           Owner: <a href="https://www.ubisoft.com/en-gb/game/assassins-creed" alt="ubisoft-link">Ubisoft</a>
+           <p>Paris, 1789 – The French Revolution turns a once-magnificent city into a place of terror and chaos. Its cobblestone streets run red with the blood of commoners who dared to rise up against the oppressive aristocracy.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Game Cafe</p>
+        <a href="#games">Back to Games</a> |
+        <a href="#about">About Us</a> |
+        <a href="#pricing">Pricing</a> |
+        <a href="#contact">Contact</a> |
+        <a href="#events">Events</a>
+    </footer>
+
+</body>
+</html>
